@@ -1,0 +1,23 @@
+<ibm-modal 
+            [open]="true"
+            (overlaySelected)="closeModal()">
+                <ibm-modal-header (closeSelect)="closeModal()">
+                    
+                </ibm-modal-header>
+                <section ibmModalContent>
+                    <h1>Sign in with your W3id</h1>
+                    <br>
+                    <input ibmText placeholder="Your IBM email address" size="xl" style="width: 320px;height: 30px;">
+                    <br>
+                    <br>                
+                    <input ibmText placeholder="password" type="password"  style="width: 320px;height: 30px;"> 
+                    <br>
+                    <br>
+                      
+                </section>
+                
+                <ibm-modal-footer>
+                    <button class="bx--btn bx--btn--secondary" (click)="closeModal()">Close</button>
+                    <button class="bx--btn bx--btn--primary" modal-primary-focus >Submit</button>
+                </ibm-modal-footer>
+            </ibm-modal>

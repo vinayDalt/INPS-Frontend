@@ -1,0 +1,38 @@
+<ibm-modal 
+            [open]="true"
+            (overlaySelected)="closeModal()"
+            size="lg">
+                <ibm-modal-header (closeSelect)="closeModal()">
+                </ibm-modal-header>
+                <section ibmModalContent>
+                    <h4>Select the Procurement focal name who gave you wow experience, so that we can recognize their outstanding work</h4>
+                    <br>
+                                       
+                    <div style="width: 600px">
+                        <ibm-combo-box
+                            placeholder="Enter user Name/Email-ID"
+                            [items]="items"
+                            (selected)="selected1($event)"
+                            (search)="onSearch($event)"
+                            (keydown.enter)="onEnter1($event)"
+                            [appendInline]="true"
+                            >
+                            <ibm-dropdown-list></ibm-dropdown-list>
+                        </ibm-combo-box>
+                    </div>
+
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <h4>In case the Procurement focalname not found in the above list, please help us with the first name and last name of the Procurement professional you are referencing in the field below:</h4>
+                    <br>
+                    <input ibmText placeholder="type email-id here" style="width: 480px;height: 40px;" > 
+                    <!-- <ibm-search placeholder="Enter User Email-ID" autocomplete="on" size="md" (valueChange)="valueChange($event)" (clear)="clear()">
+                       
+                    </ibm-search> -->
+                    <br>
+                    <br>
+                    <button ibmButton="primary" (click)="closeModal()">Submit</button>
+                </section>
+</ibm-modal>

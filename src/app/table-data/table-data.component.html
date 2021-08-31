@@ -1,0 +1,64 @@
+
+<ibm-content-switcher (selected)="demoFunction($event)" theme="dark">
+  <button ibmContentOption name="All NPS">All NPS Feedback</button>
+  <button ibmContentOption name="Dissatisfied">All NPS Dissatisfied Feedback</button>
+  <button ibmContentOption name="Neutral">All NPS Neutral Feedback</button>
+  <button ibmContentOption name="Satisfied">All NPS Satisfied Feedback</button>
+</ibm-content-switcher>
+
+<ibm-table-container>
+    <ibm-table-header>
+        <h1 ibmTableHeaderTitle>{{title}}</h1>
+        <br>
+        <p ibmTableHeaderDescription>{{description}}</p>
+    </ibm-table-header>
+    <ibm-table-toolbar [model]="Model" #toolbar>
+      <ibm-table-toolbar-actions>
+        <button *ngIf="isAdmin" ibmButton="primary" [tabindex]="toolbar.selected ? 0 : -1" (click)="deleteFeedbackFromTable()">
+          Delete
+          <ibm-icon-delete size="16" class="bx--btn__icon"></ibm-icon-delete>
+        </button>
+        <button ibmButton="primary" [tabindex]="toolbar.selected ? 0 : -1" (click)=" exportAsXLSX()">
+          Download Pdf
+          <ibm-icon-download size="16" class="bx--btn__icon"></ibm-icon-download>
+          </button>
+        </ibm-table-toolbar-actions>
+        <ibm-table-toolbar-content *ngIf="!toolbar.selected">
+            <ibm-table-toolbar-search [expandable]="true" (keyup)="searchValueChange($event)" placeholder="Filter"></ibm-table-toolbar-search>
+    <ibm-overflow-menu
+          triggerClass="bx--toolbar-action"
+          [flip]="true"
+          [customTrigger]="customTrigger"
+          placement="bottom"
+          [offset]="{ x: 0, y: 50 }">
+          <ibm-overflow-menu-option>Date-Range</ibm-overflow-menu-option>
+          <ibm-overflow-menu-option>Country</ibm-overflow-menu-option>
+    </ibm-overflow-menu>
+    <ng-template #customTrigger><svg ibmIconFilter size="16"></svg></ng-template>
+    <ibm-date-picker
+                size="xl"
+                [range]="true"
+                placeholder="mm/dd/yyyy"
+                dateFormat="d-m-Y"
+                (valueChange)="onRangeValueChange($event)">
+    </ibm-date-picker>
+       <div style="width: 200px;">
+            <ibm-dropdown
+                  size="xl"
+                  triggerClass="bx--toolbar-action"
+                  [appendInline]="false"
+                  (selected)="selected($event)">
+                <ibm-dropdown-list [items]="countryFilter"></ibm-dropdown-list>
+            </ibm-dropdown>
+       </div> 
+    </ibm-table-toolbar-content>
+ </ibm-table-toolbar>
+    
+    <div style="overflow-x: scroll;">
+      <ibm-table [model]="Model" [sortable]=true [stickyHeader]=false></ibm-table>
+    </div>
+    <ibm-pagination [model]="Model" (selectPage)="selectPage($event)" [itemsPerPageOptions]="itemsPerPageOptions"></ibm-pagination>
+    
+</ibm-table-container>
+
+<ibm-placeholder></ibm-placeholder>

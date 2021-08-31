@@ -1,0 +1,72 @@
+<div ibmGrid class="bx--grid--full-width landing-page">          
+        <div ibmRow class="landing-page__r2">
+                <div ibmCol class="landing-page__col2"  [columnNumbers]="{ 'lg': 2}">
+                        
+                    <ibm-sidenav>
+                        <!-- <ibm-sidenav-menu title="Feedback NPS">
+                            
+                                    <ibm-sidenav-item [route]="['/all-NPS-feedback']">All NPS Feedback</ibm-sidenav-item>
+                                    <ibm-sidenav-item>All NPS Satisfied</ibm-sidenav-item>
+                                    <ibm-sidenav-item>NPS Survey Neutral</ibm-sidenav-item>
+                                    <ibm-sidenav-item>All NPS Dissatisfied</ibm-sidenav-item>
+                                    <ibm-sidenav-item>All NPS Need to Notify</ibm-sidenav-item>
+                                    <ibm-sidenav-item>Country Table</ibm-sidenav-item>
+                                    <ibm-sidenav-item>Geo Leader Table</ibm-sidenav-item>
+                                    
+                                </ibm-sidenav-menu> -->
+
+                                <ibm-sidenav-item *ngIf="isGeoLead || isAdmin" [route]="['/table-data']">INPS Feedbacks</ibm-sidenav-item>
+                                <ibm-sidenav-item [route]="['/feedback']">Feedback Form</ibm-sidenav-item>
+                                <ibm-sidenav-item *ngIf="isGeoLead || isAdmin" [route]="['/country-table']">Country Table</ibm-sidenav-item>
+                                <ibm-sidenav-item *ngIf="isGeoLead || isAdmin">Geo Leader Table</ibm-sidenav-item>
+                                <ibm-sidenav-item *ngIf="isGeoLead || isAdmin">CSAT Setting</ibm-sidenav-item>
+                                <ibm-sidenav-item *ngIf="isAdmin" [route]="['/admin']">Admin</ibm-sidenav-item>
+                                <ibm-sidenav-item [route]="['/contact-us']">Contact Us</ibm-sidenav-item>
+                                <ibm-sidenav-item [route]="['/help']">Help</ibm-sidenav-item>
+                                <ibm-sidenav-item *ngIf="isAdmin" [route]="['/import']">Import File</ibm-sidenav-item>
+                        </ibm-sidenav> 
+                </div>
+                    
+                    <div ibmCol class="landing-col-10" [columnNumbers]="{ 'lg': 10}">
+                        
+                        
+                        <div ibmRow class="landing-page__banner">
+
+                            
+                
+                                    <h1 class="landing-page__heading">
+                                            Welcome to Procurement Internet Net Promoter Score (iNPS)!
+                                    </h1>
+                          
+            
+                        </div>
+                        <br>
+                        <br>
+                        <div ibmRow class="landing-page__row-content">
+                            <div ibmCol [columnNumbers]="{'lg': 6}">
+                              
+                              <p class="landing-page__p">
+                                INPS tool is used to send surveys to the requestors.
+                                Data comes to this tool from BDW PO, BDW Engagement support, POP, IBM emptoris data in excel file.
+                                Data from BDW PO, BDW engagement support, POP tool will be pulled by scheduled agents in INPS tool.
+                                IBM Emptoris data in excel file will be imported to INPS tool. IBM users take the survey with the Adhoc link.
+                                If the users submit the feedback as dissatisfied notification will be sent to the corresponding Geo leader stating that the user is dissatisfied with the support given,
+                                Geo leader or focal have to work with the requestor and make sure that the requestor is satisfied with the support provided and close the feedback request.
+                              </p>
+                              <br>
+                              <br>
+                              <button ibmButton="primary">Learn more</button>
+
+                            </div>
+
+                    </div>
+    
+        </div>
+
+ 
+</div>
+<ibm-placeholder></ibm-placeholder>
+
+
+
+

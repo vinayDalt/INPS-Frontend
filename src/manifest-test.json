@@ -1,0 +1,10 @@
+{
+    "client_id": "YjJlNGEwNzMtNjYzZS00",
+    "client_secret": "ODU3NjkwNGMtMDQzOC00",
+    "discovery_url": "https://preprod.login.w3.ibm.com/oidc/endpoint/default/.well-known/openid-configuration",
+    "callback_url": "https://inps-test-ui.wdc1a.ciocloud.nonprod.intranet.ibm.com/auth/sso/callback",
+    "appAdmin": "test-INPS-admin",
+    "appGeoLead": "test-INPS-geoLead",
+    "hostname": "https://inps-test-ui.wdc1a.ciocloud.nonprod.intranet.ibm.com"
+
+}

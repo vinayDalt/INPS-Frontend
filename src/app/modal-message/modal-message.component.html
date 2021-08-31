@@ -1,0 +1,12 @@
+<ibm-modal 
+            [open]="true"
+            size="sm"
+            (overlaySelected)="closeModal()">
+                <ibm-modal-header (closeSelect)="closeModal()">
+                </ibm-modal-header>
+                <section ibmModalContent>
+                    <h4>{{modalText}} succesfully</h4>
+                    <br>
+                    <button ibmButton="primary" (click)="closeModal()">OK</button>
+                </section>
+</ibm-modal>

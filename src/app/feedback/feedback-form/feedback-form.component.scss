@@ -1,0 +1,591 @@
+// .para-color1{
+//     color: blue;
+// }
+
+// .note{
+//     width: 82%;
+//     padding: 10px;
+// }
+
+// .comments{
+//     width: 600px;
+//     height: 100px;
+// }
+
+
+// .feedback-image{
+//     width: 380px;
+//     height: 250px;
+//     margin-left: 140px;
+
+// }
+
+
+// .rating{
+//     display: flex;
+//     justify-content: space-between;
+// }
+// .rating .item {
+//     border-radius: 100%;
+//     text-align: center;
+//     color: #fff;
+//     width: 40px;
+//     height: 40px;
+// }
+
+
+// .rating .item-low{
+//     background-color: #DA1E28;
+//     border: 2px solid #DA1E28;
+// }
+// .rating .item-mid {
+//     background-color: #FF832B;
+//     border: 2px solid #FF832B;
+// }
+// .rating .item-high {
+//     background-color: #198038;
+//     border: 2px solid #198038;
+// }
+// .rating .item label {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//     font-size: 16px;
+// }
+
+// .rating .item input {
+//     display: none;
+// }
+
+// input{
+//     font-family: inherit;
+//     border-radius: 0;
+// }
+
+// .rating .item-low:hover
+// {
+// background-color: #F87076;
+// }
+
+// .rating .item-mid:hover
+// {
+// background-color: #F3B61B;
+// }
+
+// .rating .item-high:hover
+// {
+// background-color: #42BE65;
+// }
+
+// .rating-caption {
+//     font-size: 16px;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 30px;
+//     margin-top: 10px;
+// }
+
+.para-color1{
+    color: blue;
+}
+.note{
+    width: 82%;
+    padding: 10px;
+}
+.comments{
+    width: 600px;
+    height: 100px;
+}
+.feedback-image{
+    width: 380px;
+    height: 250px;
+    margin-left: 140px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rating .item {
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+.rating .item-low {
+    background-color: #DA1E28;
+    border: 2px solid #DA1E28;
+}
+.rating .item-mid {
+    background-color: #FF832B;
+    border: 2px solid #FF832B;
+}
+.rating .item-high {
+    background-color: #198038;
+    border: 2px solid #198038;
+}
+.rating .item label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+.rating .item input {
+    display: none;
+}
+input{
+    font-family: inherit;
+    border-radius: 0;
+}
+.rating .item-low:hover
+{
+background-color: #F87076;
+}
+.rating .item-mid:hover
+{
+background-color: #F3B61B;
+}
+.rating .item-high:hover
+{
+background-color: #42BE65;
+}
+.rating .item-low-highlight
+{
+background-color: #F87076;
+border: 2px solid #DA1E28;
+}
+.rating .item-high-highlight
+{
+background-color: #42BE65;
+}
+.rating-caption {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  }
+  .rating .low1{
+    border-radius: 100%;
+    //border-radius: 50%;
+    //border-bottom: solid 3px #7d1616;
+    //transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #DA1E28;
+    border: 2px solid #DA1E28;
+  }
+  .rating .low1 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .low1 input{
+    display: none;
+  }
+  .rating .low1:hover{
+    background-color: #F87076;
+    //width: 50px;
+    //height: 50px;
+  }
+  .rating .low1-highlight{
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #F87076;
+    border: 2px solid #DA1E28;
+  }
+  .rating .low1-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .low1-highlight input{
+    display: none;
+  }
+  .rating .mid1{
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #FF832B;
+    border: 2px solid #FF832B;
+  }
+  .rating .mid1 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .mid1 input{
+    display: none;
+  }
+  .rating .mid:hover{
+    background-color: #F3B61B;
+  }
+  .rating .mid1-highlight{
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #F3B61B;
+    border: 2px solid #FF832B;
+  }
+  .rating .mid1-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .mid1-highlight input{
+    display: none;
+  }
+  .rating .high1{
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #198038;
+    border: 2px solid #198038;
+  }
+  .rating .high1 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .high1 input{
+    display: none;
+  }
+  .rating .high1:hover{
+    background-color: #42BE65;
+  }
+  .rating .high1-highlight{
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #42BE65;
+    border: 2px solid #198038;
+  }
+  .rating .high1-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .high1-highlight input{
+    display: none;
+  }
+///////////////////////////////////round blue button////////////////////
+  .round-button1 {
+    width: 40px;
+    height: 40px;
+}
+.round-button-circle {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    border:3px solid #cfdcec;
+    overflow:hidden;
+    
+    background: #DA1E28; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+    background:#F87076;
+}
+.round-button1 a {
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    
+    text-align:center;
+    color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+//////////light pink button///////////////////
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    background: #ff8181;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #bd6565;
+    transition: .4s;
+}
+// .btn1:active{
+//     -ms-transform: translateY(2px);
+//     -webkit-transform: translateY(2px);
+//     transform: translateY(2px);
+//     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+//     border-bottom: none;
+// }
+///////////////////////////////////new 1-10 buttons////////////////////////////////////////
+.rating .low2{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #7d1616;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #DA1E28;
+    //border: 2px solid #DA1E28;
+  }
+  .rating .low2 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .low2 input{
+    display: none;
+  }
+  .rating .low2:hover{
+    background-color: #F87076;
+    width: 50px;
+    height: 50px;
+  }
+  .rating .mid2{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #77421c;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #FF832B;
+    //border: 2px solid #FF832B;
+  }
+  .rating .mid2 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .mid2 input{
+    display: none;
+  }
+  .rating .mid2:hover{
+    background-color: #F3B61B;
+    width: 50px;
+    height: 50px;
+  }
+  .rating .high2{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #0c3819;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #198038;
+    //border: 2px solid #198038;
+  }
+  .rating .high2 label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .high2 input{
+    display: none;
+  }
+  .rating .high2:hover{
+    background-color: #42BE65;
+    width: 50px;
+    height: 50px;
+  }
+  /////highllight styles//////
+  .rating .low2-highlight{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #7d1616;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #F87076;
+    //border: 2px solid #DA1E28;
+  }
+  .rating .low2-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .low2-highlight input{
+    display: none;
+  }
+  .rating .mid2-highlight{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #77421c;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #F3B61B;
+    //border: 2px solid #DA1E28;
+  }
+  .rating .mid2-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .mid2-highlight input{
+    display: none;
+  }
+  .rating .high2-highlight{
+    //border-radius: 100%;
+    border-radius: 50%;
+    border-bottom: solid 3px #0c3819;
+    transition: .4s;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #42BE65;
+    //border: 2px solid #DA1E28;
+  }
+  .rating .high2-highlight label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .rating .high2-highlight input{
+    display: none;
+  }
+  ////////////////////////////////new glossy//////////////////////////
+//   @import "compass/css3";
+@import '~compass-mixins/lib/compass/css3';
+$blue: #108FE8;
+$yellow: #FF832B;
+$red: #DA1E28;
+$green: #198038;
+@mixin round-button($baseColor:$blue, $hoverBaseColor:#333, $diameter:3.6vw) {
+  background: $baseColor;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px darken($baseColor, 10%) inset, 0 5px 5px rgba(darken($baseColor, 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: $diameter;
+  width: $diameter;
+  font-size: 16px;
+  
+  &:hover {
+    background: $hoverBaseColor;
+    box-shadow: 0 -2px 0 3px darken($hoverBaseColor, 10%) inset, 0 5px 5px rgba(darken($hoverBaseColor, 40%), 0.17), 0 15px rgba(#fff, 0.32) inset;
+   }
+}
+
+.newButtons {
+    justify-content: space-between;
+}
+button {
+  margin: 0 4px;
+}
+.btn-blue {
+  @include round-button;
+}
+.btn-blue .label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+.btn-blue .input{
+    display: none
+}
+.btn-red {
+  @include round-button($red,#F87076);
+}
+.btn-green {
+  @include round-button($green,#42BE65);
+}
+.btn-yellow {
+  @include round-button($yellow,#F3B61B);
+}
+.newButtons {
+    justify-content: space-between;
+}

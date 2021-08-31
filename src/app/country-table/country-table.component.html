@@ -1,0 +1,26 @@
+<ibm-table-container>
+    <ibm-table-header >
+        <h1 ibmTableHeaderTitle>{{title}}</h1>
+        <br>
+        <p ibmTableHeaderDescription>{{description}}</p>
+    </ibm-table-header>
+    <!-- <ibm-table [model]="Model"></ibm-table> -->
+    <ibm-table-toolbar [model]="Model" #toolbar>
+        <ibm-table-toolbar-actions>
+            <button *ngIf="isAdmin" ibmButton="primary" [tabindex]="toolbar.selected ? 0 : -1" (click)="deleteCountry()">
+                Delete<ibm-icon-delete size="16" class="bx--btn__icon"></ibm-icon-delete>
+            </button>
+            <button ibmButton="primary" [tabindex]="toolbar.selected ? 0 : -1" (click)=" exportAsXLSX()">
+                Download Pdf
+                <ibm-icon-download size="16" class="bx--btn__icon"></ibm-icon-download>
+                </button>
+        </ibm-table-toolbar-actions>
+        <ibm-table-toolbar-content *ngIf="!toolbar.selected">
+            <button ibmButton="primary" size="sm" (click)="AddCountry()">
+                Add Country<ibm-icon-add size="20" class="bx--btn__icon"></ibm-icon-add>
+            </button>
+        </ibm-table-toolbar-content>
+    </ibm-table-toolbar>
+    <ibm-table [model]="Model"></ibm-table>
+</ibm-table-container>
+<ibm-placeholder></ibm-placeholder>
